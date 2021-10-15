@@ -40,7 +40,7 @@ const useInitialState = () => {
 	const [state, setState] = useState(initialState);
 
 	const addToCart = (payload, amount) => {
-		if(amount == 0){
+		if(amount === 0){
 			return;
 		}
 		if(state.cart.find((i)=>{return payload.key === i.key}) === undefined){

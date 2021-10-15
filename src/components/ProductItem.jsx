@@ -9,10 +9,9 @@ import AppContext from '../context/AppContext';
 
 const ProductItem = ({props}) =>{
     const {removeFromCart} = useContext(AppContext);
-    console.log(props);
     return(
         <div className="item">
-            <img src={props.img} alt="" className="item-image"/>
+            <img src={props.images[0].img} alt="" className="item-image"/>
             <div className="item-data">
                 <h1>{props.name}</h1>
                 <p>{props.price} x {props.amount} <span>{props.price * props.amount}</span></p>
