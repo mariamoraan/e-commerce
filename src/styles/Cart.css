@@ -59,7 +59,7 @@
     display: none;
 }
 
-@media (max-width: 375px){
+@media (max-width: 700px){
     .cart-menu{
         width: 94vw;
         min-height: 30vh;

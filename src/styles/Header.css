@@ -73,7 +73,7 @@ nav{
     border-color: var(--orange);
 }
 
-@media (max-width: 375px){
+@media (max-width: 700px){
     nav{
         border-bottom: none;
         padding: 25px 1em;
