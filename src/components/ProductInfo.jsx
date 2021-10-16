@@ -40,7 +40,7 @@ const ProductInfo = ({props}) => {
                 </div>
                 <div className="product-info-images-sub">
                     {props.images.map((i)=>(
-                        <div className={actualImage.key === i.key ? 'active' : null}><img src={i.img} alt="sneakers"  key={i.key} onClick={()=>(setActualImage(i))}/></div>
+                        <div className={actualImage.key === i.key ? 'active' : null} key={i.key}><img src={i.img} alt="sneakers"  onClick={()=>(setActualImage(i))}/></div>
                     ))}
                 </div>
             </div>
