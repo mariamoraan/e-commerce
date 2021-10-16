@@ -49,7 +49,7 @@ const ProductInfo = ({props}) => {
                 <h1 className="product-info-text-title">{props.name}</h1>
                 <p className="product-info-text-description">{props.description}</p>
                 <h1 className="product-info-text-price">
-                    {props.price}
+                    ${props.price}
                     <span className="product-info-text-price-discount">{props.discount}</span> 
                     <span className="product-info-text-price-last-price">{props.last_price}</span>
                 </h1>
@@ -64,7 +64,8 @@ const ProductInfo = ({props}) => {
                         </button>
                     </span>
                     <button  className="add-to-cart-button" onClick={()=>{
-                            addToCart(props, amount)
+                            addToCart(props, amount);
+                            setAmount(0);
                         }
                         
                         }>

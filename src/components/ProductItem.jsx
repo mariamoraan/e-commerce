@@ -14,7 +14,7 @@ const ProductItem = ({props}) =>{
             <img src={props.images[0].img} alt="" className="item-image"/>
             <div className="item-data">
                 <h1>{props.name}</h1>
-                <p>{props.price} x {props.amount} <span>{props.price * props.amount}</span></p>
+                <p>${props.price} x {props.amount} <span>${props.price * props.amount}</span></p>
             </div>
             <img src={trash} alt="trash" className="trash" onClick={()=>(removeFromCart(props))}/>
         </div>

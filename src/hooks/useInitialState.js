@@ -51,15 +51,8 @@ const useInitialState = () => {
 			});
 		}
 		else{
-			const prev_order = state.cart.find((i)=>{return i.key === payload.key});
-			const prev_order_amount = prev_order.amount;
-			const current_order_amount = payload.amount + prev_order_amount;
-			state.cart = state.cart.filter(i => i.key !== payload.key);
-			payload.amount = current_order_amount;
-			setState({
-				...state,
-				cart: [...state.cart, payload]
-			});
+			var prev_order = state.cart.find(i => i.key === payload.key);
+			prev_order.amount = prev_order.amount + amount;
 		}
 		
 	};
