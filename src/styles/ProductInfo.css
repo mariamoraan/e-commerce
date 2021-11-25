@@ -64,14 +64,18 @@
     cursor: pointer;
     border: 2px solid var(--white);
 }
-.product-info-images-sub img:hover{
+.product-info-images-sub div:hover img{
+    -moz-opacity: 0.50;
     opacity: 50%;
+    filter: alpha(opacity=50);
 }
 .product-info-images-sub .active{
     border-color: var(--orange);
 }
 .active img{
+    -moz-opacity: 0.50;
     opacity: 50%;
+    filter: alpha(opacity=50);
 }
 .product-info-images-sub img{
     height: 100%;
