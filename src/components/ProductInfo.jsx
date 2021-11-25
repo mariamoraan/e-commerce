@@ -11,6 +11,7 @@ import '../styles/global.css';
 import '../styles/ProductInfo.css';
 
 import AppContext from '../context/AppContext';
+import CartIcon from '../icons/CartIcon';
 
 const ProductInfo = ({props}) => {
     const [amount, setAmount] = useState(0);
@@ -70,7 +71,7 @@ const ProductInfo = ({props}) => {
                         
                         }>
                         <span>
-                        <img src={cart} alt="cart" />
+                        <CartIcon fillc={"var(--light-grayis-blue)"}/>
                         <p>Add to cart</p>
                         </span>
                     </button>

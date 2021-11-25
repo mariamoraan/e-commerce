@@ -11,6 +11,7 @@ import '../styles/Header.css';
 import MobileMenu from './MobileMenu';
 import Cart from './Cart';
 import AppContext from '../context/AppContext';
+import CartIcon from '../icons/CartIcon';
 
 const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -41,7 +42,7 @@ const Header = () => {
             </div>
             <div className="right-nav">
                 <div className="cart" onClick={()=>{setToggleCart(!toggleCart)}}>
-                    <img src={cart} alt="cart" />
+                    <CartIcon />
                     {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
                 </div>
                 <img src={avatar} alt="avatar" className="avatar"/>

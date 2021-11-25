@@ -140,8 +140,8 @@
 }
 .add-to-cart-button:hover{
 }
-.add-to-cart-button img{
-    margin-right: 1em;
+.add-to-cart-button p{
+    margin-left: 1em;
 }
 
 .add-to-cart-units{
