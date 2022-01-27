@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://mia-moran.github.io/e-commerce/](https://mariamoraan.github.io/e-commerce/)
+- Live Site URL: [https://mariamoraan.github.io/e-commerce/](https://mariamoraan.github.io/e-commerce/)
 
 ## My process
 
